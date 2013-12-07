@@ -19,6 +19,8 @@
 		901615DB18539FE4009C0870 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901615C318539FE4009C0870 /* UIKit.framework */; };
 		901615E318539FE4009C0870 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 901615E118539FE4009C0870 /* InfoPlist.strings */; };
 		901615EF1853AA69009C0870 /* XCParameterizedTestCaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 901615EE1853AA69009C0870 /* XCParameterizedTestCaseTests.m */; };
+		901615F31853ADE5009C0870 /* XCParameterizedTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 901615F21853ADE5009C0870 /* XCParameterizedTestCase.m */; };
+		901615F61853B466009C0870 /* XCTestFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = 901615F51853B466009C0870 /* XCTestFixture.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		901615E018539FE4009C0870 /* XCParameterizedTestCaseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XCParameterizedTestCaseTests-Info.plist"; sourceTree = "<group>"; };
 		901615E218539FE4009C0870 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		901615EE1853AA69009C0870 /* XCParameterizedTestCaseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCParameterizedTestCaseTests.m; sourceTree = "<group>"; };
+		901615F11853ADE5009C0870 /* XCParameterizedTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCParameterizedTestCase.h; sourceTree = "<group>"; };
+		901615F21853ADE5009C0870 /* XCParameterizedTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCParameterizedTestCase.m; sourceTree = "<group>"; };
+		901615F41853B466009C0870 /* XCTestFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCTestFixture.h; sourceTree = "<group>"; };
+		901615F51853B466009C0870 /* XCTestFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCTestFixture.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +135,7 @@
 		901615DE18539FE4009C0870 /* XCParameterizedTestCaseTests */ = {
 			isa = PBXGroup;
 			children = (
+				901615F01853ADC1009C0870 /* Source */,
 				901615EE1853AA69009C0870 /* XCParameterizedTestCaseTests.m */,
 				901615DF18539FE4009C0870 /* Supporting Files */,
 			);
@@ -142,6 +149,17 @@
 				901615E118539FE4009C0870 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		901615F01853ADC1009C0870 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				901615F11853ADE5009C0870 /* XCParameterizedTestCase.h */,
+				901615F21853ADE5009C0870 /* XCParameterizedTestCase.m */,
+				901615F41853B466009C0870 /* XCTestFixture.h */,
+				901615F51853B466009C0870 /* XCTestFixture.m */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,7 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				901615F31853ADE5009C0870 /* XCParameterizedTestCase.m in Sources */,
 				901615EF1853AA69009C0870 /* XCParameterizedTestCaseTests.m in Sources */,
+				901615F61853B466009C0870 /* XCTestFixture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
