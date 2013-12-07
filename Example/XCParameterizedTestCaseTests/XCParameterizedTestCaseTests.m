@@ -21,7 +21,7 @@
              [XCTestCaseData createWithInputValue:@1 withExpectedValue:@0],
              [XCTestCaseData createWithInputValue:@2 withExpectedValue:@1],
              [XCTestCaseData createWithInputValue:@3 withExpectedValue:@1],
-             [XCTestCaseData createWithInputValue:@4 withExpectedValue:@1]
+             [XCTestCaseData createWithInputValue:@4 withExpectedValue:@1],
              ];
 }
 

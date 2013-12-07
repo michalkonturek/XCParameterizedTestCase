@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface XCTestCaseData : NSObject
+#import "TestCaseData.h"
+
+@interface XCTestCaseData : NSObject<TestCaseData>
 
 + (instancetype)createWithInputValue:(id)input withExpectedValue:(id)expected;
 

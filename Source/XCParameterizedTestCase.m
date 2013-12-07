@@ -8,14 +8,16 @@
 
 #import "XCParameterizedTestCase.h"
 
+#import "TestCaseData.h"
+
 @implementation XCParameterizedTestCase
 
 + (id)defaultTestSuite {
     XCTestSuite *suite = [[XCTestSuite alloc] initWithName:NSStringFromClass(self)];
     
-    for (XCTestCaseData *fixture in [self fixtures]) {
-        [self addTestCaseWithInput:fixture.input
-                     expectedValue:fixture.expected
+    for (id<TestCaseData> item in [self fixtures]) {
+        [self addTestCaseWithInput:item.input
+                     expectedValue:item.expected
                        toTestSuite:suite];
     }
     
