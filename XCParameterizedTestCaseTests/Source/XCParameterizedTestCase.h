@@ -8,16 +8,20 @@
 
 #import <XCTest/XCTest.h>
 
+#import "XCTestFixture.h"
+
 @interface XCParameterizedTestCase : XCTestCase
 
 + (void)addTestCaseWithInput:(id)input
                expectedValue:(id)expected toTestSuite:(XCTestSuite *)testSuite;
 
++ (NSArray *)fixtures;
+
 @property (nonatomic, strong) id input;
-@property (nonatomic, strong) id expectedValue;
+@property (nonatomic, strong) id expected;
 
 - (instancetype)initWithInvocation:(NSInvocation *)invocation
                          withInput:(id)input
-                     expectedValue:(id)expected;
+                      withExpected:(id)expected;
 
 @end

@@ -10,24 +10,40 @@
 
 @implementation XCParameterizedTestCase
 
++ (id)defaultTestSuite {
+    XCTestSuite *suite = [[XCTestSuite alloc] initWithName:NSStringFromClass(self)];
+    
+    for (XCTestFixture *fixture in [self fixtures]) {
+        [self addTestCaseWithInput:fixture.input
+                     expectedValue:fixture.expected
+                       toTestSuite:suite];
+    }
+    
+    return suite;
+}
+
++ (NSArray *)fixtures {
+    return @[];
+}
+
 + (void)addTestCaseWithInput:(id)input
                expectedValue:(id)expected toTestSuite:(XCTestSuite *)testSuite {
     
     for (id invocation in [self testInvocations]) {
         XCTestCase *test = [[self alloc] initWithInvocation:invocation
-                                                  withInput:input expectedValue:expected];
+                                                  withInput:input withExpected:expected];
         [testSuite addTest:test];
     }
 }
 
 - (instancetype)initWithInvocation:(NSInvocation *)invocation
                          withInput:(id)input
-                     expectedValue:(id)expected {
+                      withExpected:(id)expected {
     
     self = [super initWithInvocation:invocation];
     if (self) {
         _input = input;
-        _expectedValue = expected;
+        _expected = expected;
     }
     
     return self;

@@ -16,21 +16,18 @@
 
 @implementation XCParameterizedTestCaseTests
 
-
-+ (id)defaultTestSuite {
-    XCTestSuite *suite = [[XCTestSuite alloc] initWithName:NSStringFromClass(self)];
-    
-    [self addTestCaseWithInput:@1 expectedValue:@0 toTestSuite:suite];
-    [self addTestCaseWithInput:@2 expectedValue:@1 toTestSuite:suite];
-    [self addTestCaseWithInput:@3 expectedValue:@1 toTestSuite:suite];
-    [self addTestCaseWithInput:@4 expectedValue:@1 toTestSuite:suite];
-    
-    return suite;
++ (NSArray *)fixtures {
+    return @[
+             [XCTestFixture createWithInputValue:@1 withExpectedValue:@0],
+             [XCTestFixture createWithInputValue:@2 withExpectedValue:@1],
+             [XCTestFixture createWithInputValue:@3 withExpectedValue:@1],
+             [XCTestFixture createWithInputValue:@4 withExpectedValue:@1]
+             ];
 }
 
 - (void)testExample {
     NSInteger result = [self numberForInput:self.input];
-    XCTAssertEqual(self.expectedValue, @(result), @"");
+    XCTAssertEqual(self.expected, @(result), @"");
 }
 
 - (NSInteger)numberForInput:(id)input {

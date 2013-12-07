@@ -10,4 +10,11 @@
 
 @interface XCTestFixture : NSObject
 
++ (instancetype)createWithInputValue:(id)input withExpectedValue:(id)expected;
+
+@property (nonatomic, strong) id input;
+@property (nonatomic, strong) id expected;
+
+- (instancetype)initWithInputValue:(id)input withExpectedValue:(id)expected;
+
 @end
