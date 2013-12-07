@@ -1,14 +1,14 @@
 //
-//  XCTestFixture.m
+//  XCTestCaseData.m
 //  XCParameterizedTestCase
 //
 //  Created by Michal Konturek on 07/12/2013.
 //  Copyright (c) 2013 Michal Konturek. All rights reserved.
 //
 
-#import "XCTestFixture.h"
+#import "XCTestCaseData.h"
 
-@implementation XCTestFixture
+@implementation XCTestCaseData
 
 + (instancetype)createWithInputValue:(id)input withExpectedValue:(id)excpected {
     return [[self alloc] initWithInputValue:input withExpectedValue:excpected];

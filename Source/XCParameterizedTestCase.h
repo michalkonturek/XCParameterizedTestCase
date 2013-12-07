@@ -8,7 +8,7 @@
 
 #import <XCTest/XCTest.h>
 
-#import "XCTestFixture.h"
+#import "XCTestCaseData.h"
 
 @interface XCParameterizedTestCase : XCTestCase
 

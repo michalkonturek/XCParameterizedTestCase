@@ -1,5 +1,5 @@
 //
-//  XCTestFixture.h
+//  XCTestCaseData.h
 //  XCParameterizedTestCase
 //
 //  Created by Michal Konturek on 07/12/2013.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface XCTestFixture : NSObject
+@interface XCTestCaseData : NSObject
 
 + (instancetype)createWithInputValue:(id)input withExpectedValue:(id)expected;
 

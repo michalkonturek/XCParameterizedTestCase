@@ -13,7 +13,7 @@
 + (id)defaultTestSuite {
     XCTestSuite *suite = [[XCTestSuite alloc] initWithName:NSStringFromClass(self)];
     
-    for (XCTestFixture *fixture in [self fixtures]) {
+    for (XCTestCaseData *fixture in [self fixtures]) {
         [self addTestCaseWithInput:fixture.input
                      expectedValue:fixture.expected
                        toTestSuite:suite];

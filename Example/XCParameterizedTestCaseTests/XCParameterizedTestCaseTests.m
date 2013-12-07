@@ -18,10 +18,10 @@
 
 + (NSArray *)fixtures {
     return @[
-             [XCTestFixture createWithInputValue:@1 withExpectedValue:@0],
-             [XCTestFixture createWithInputValue:@2 withExpectedValue:@1],
-             [XCTestFixture createWithInputValue:@3 withExpectedValue:@1],
-             [XCTestFixture createWithInputValue:@4 withExpectedValue:@1]
+             [XCTestCaseData createWithInputValue:@1 withExpectedValue:@0],
+             [XCTestCaseData createWithInputValue:@2 withExpectedValue:@1],
+             [XCTestCaseData createWithInputValue:@3 withExpectedValue:@1],
+             [XCTestCaseData createWithInputValue:@4 withExpectedValue:@1]
              ];
 }
 
