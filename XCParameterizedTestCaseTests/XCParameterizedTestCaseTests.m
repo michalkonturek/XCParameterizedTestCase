@@ -12,9 +12,6 @@
 
 @interface XCParameterizedTestCaseTests : XCParameterizedTestCase
 
-//@property (nonatomic, strong) id input;
-//@property (nonatomic, strong) id expectedValue;
-
 @end
 
 @implementation XCParameterizedTestCaseTests
@@ -30,29 +27,6 @@
     
     return suite;
 }
-
-//+ (void)addTestCaseWithInput:(id)input
-//               expectedValue:(id)expected toTestSuite:(XCTestSuite *)testSuite {
-//    
-//    for (id invocation in [self testInvocations]) {
-//        XCTestCase *test = [[self alloc] initWithInvocation:invocation
-//                                                  withInput:input expectedValue:expected];
-//        [testSuite addTest:test];
-//    }
-//}
-
-//- (instancetype)initWithInvocation:(NSInvocation *)invocation
-//                         withInput:(id)input
-//                     expectedValue:(id)expected {
-//
-//    self = [super initWithInvocation:invocation];
-//    if (self) {
-//        _input = input;
-//        _expectedValue = expected;
-//    }
-//    
-//    return self;
-//}
 
 - (void)testExample {
     NSInteger result = [self numberForInput:self.input];
