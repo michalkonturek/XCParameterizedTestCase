@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
     :tag => "0.9.0" 
   }
 
-  s.source_files = 'XCParameterizedTestCase/Source/**/*.{h,m}'
+  s.source_files = 'Source/**/*.{h,m}'
   s.requires_arc = true
 end
