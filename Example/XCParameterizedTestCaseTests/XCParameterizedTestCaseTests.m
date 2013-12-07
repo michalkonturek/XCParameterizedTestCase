@@ -16,7 +16,7 @@
 
 @implementation XCParameterizedTestCaseTests
 
-+ (NSArray *)fixtures {
++ (NSArray *)testCaseData {
     return @[
              [XCTestCaseData createWithInputValue:@1 withExpectedValue:@0],
              [XCTestCaseData createWithInputValue:@2 withExpectedValue:@1],

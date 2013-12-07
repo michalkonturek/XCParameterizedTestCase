@@ -15,7 +15,7 @@
 + (id)defaultTestSuite {
     XCTestSuite *suite = [[XCTestSuite alloc] initWithName:NSStringFromClass(self)];
     
-    for (id<TestCaseData> item in [self fixtures]) {
+    for (id<TestCaseData> item in [self testCaseData]) {
         [self addTestCaseWithInput:item.input
                      expectedValue:item.expected
                        toTestSuite:suite];
@@ -24,7 +24,7 @@
     return suite;
 }
 
-+ (NSArray *)fixtures {
++ (NSArray *)testCaseData {
     return @[];
 }
 

@@ -15,7 +15,7 @@
 + (void)addTestCaseWithInput:(id)input
                expectedValue:(id)expected toTestSuite:(XCTestSuite *)testSuite;
 
-+ (NSArray *)fixtures;
++ (NSArray *)testCaseData;
 
 @property (nonatomic, strong) id input;
 @property (nonatomic, strong) id expected;
