@@ -40,6 +40,13 @@ you do this:
 ```
 
 
+## License
+
+Source code of this project is available under the standard MIT license. Please see [the license file][LICENSE].
+
+[PODS]:http://cocoapods.org/
+[LICENSE]:https://github.com/michalkonturek/XCParameterizedTestCase/blob/master/LICENSE
+
 
 ## Mechanics
 
@@ -53,16 +60,17 @@ Example output of FizzBuzz parameterized test case with 5 test case data:
 ![License MIT](console.png)
 
 
-## License
-
-Source code of this project is available under the standard MIT license. Please see [the license file][LICENSE].
-
-[PODS]:http://cocoapods.org/
-[LICENSE]:https://github.com/michalkonturek/XCParameterizedTestCase/blob/master/LICENSE
-
-
 ## Installation
 
+`XCParameterizedTestCase` is available through [CocoaPods][PODS].
+
+In your `Podfile` simply add the following code:
+
+```obj-c
+target :YourTestTarget, :exclusive => true do
+    pod 'XCParameterizedTestCase',	'>= 0.9.0'
+end
+```
 
 ## Usage
 
@@ -97,8 +105,8 @@ Source code of this project is available under the standard MIT license. Please 
 
 ## Known Issues
 
-* `xctool` - tests crash when using `xctool`
-* Xcode Test Navigator - does not list injected test cases
+* `xctool` crashes when running tests with `XCParameterizedTestCase`
+* Xcode Test Navigator does not list injected test cases
 
 
 - - - 
