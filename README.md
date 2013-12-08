@@ -21,11 +21,24 @@ instead of this:
 	NSInteger input = 3;
     assertThat([FizzBuzz outputForInteger:input], equalTo(@"Fizz"));
 }
+
+- (void)test_outputForInteger_when_05_returns_buzz {
+    NSInteger input = 5;
+    assertThat([FizzBuzz outputForInteger:input], equalTo(@"Buzz"));
+}
 ```
 
 you do this:
 
-`[XCTestCaseData createWithInputValue:@3 withExpectedValue:@"Fizz"]`
+```obj-c
++ (NSArray *)testCaseData {
+    return @[
+             [XCTestCaseData createWithInputValue:@3 withExpectedValue:@"Fizz"],
+             [XCTestCaseData createWithInputValue:@5 withExpectedValue:@"Buzz"],
+             ];
+}
+```
+
 
 
 ## Mechanics
