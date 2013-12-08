@@ -17,14 +17,53 @@ It contains a single test method which is executed multiple times, depending on 
 
 The idea is to pass a collection of `TestCaseData` objects instead of defining multiple test methods.
 
-<!--```obj-c
-```-->
+With XCParameterized test case you do this:
 
-<!--[TestCaseData(1,"1")]
-[TestCaseData(3,"fizz")]
-[TestCaseData(5,"buzz")]
-- (void)test_fizzbuzz_withInput:(id)input andExpected:(id)expected {
-}-->
+```obj-c
++ (NSArray *)testCaseData {
+    return @[
+             [XCTestCaseData createWithInputValue:@1 withExpectedValue:@"1"],
+             [XCTestCaseData createWithInputValue:@3 withExpectedValue:@"Fizz"],
+             [XCTestCaseData createWithInputValue:@5 withExpectedValue:@"Buzz"],
+             [XCTestCaseData createWithInputValue:@6 withExpectedValue:@"Fizz"],
+             [XCTestCaseData createWithInputValue:@15 withExpectedValue:@"FizzBuzz"]
+             ];
+}
+
+- (void)test_fizbuzz {
+    id result = [FizzBuzz outputForInteger:[self.input integerValue]];
+    XCTAssertEqualObjects(self.expected, result, @"");
+}
+```
+
+
+```obj-c
+- (void)test_01_returns_01 {
+    NSInteger input = 1;
+    assertThat([FizzBuzz outputForInteger:input], equalTo(@"1"));
+}
+
+- (void)test_03_returns_fizz {
+    NSInteger input = 3;
+    assertThat([FizzBuzz outputForInteger:input], equalTo(@"Fizz"));
+}
+
+- (void)test_05_returns_buzz {
+    NSInteger input = 5;
+    assertThat([FizzBuzz outputForInteger:input], equalTo(@"Buzz"));
+}
+
+- (void)test_06_returns_fizz {
+    NSInteger input = 6;
+    assertThat([FizzBuzz outputForInteger:input], equalTo(@"Fizz"));
+}
+
+- (void)test_15_returns_fizzbuzz {
+    NSInteger input = 15;
+    assertThat([FizzBuzz outputForInteger:input], equalTo(@"FizzBuzz"));
+}
+```
+
 
 ## License
 

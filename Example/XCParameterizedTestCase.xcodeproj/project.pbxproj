@@ -18,9 +18,10 @@
 		901615DA18539FE4009C0870 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901615BF18539FE4009C0870 /* Foundation.framework */; };
 		901615DB18539FE4009C0870 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901615C318539FE4009C0870 /* UIKit.framework */; };
 		901615E318539FE4009C0870 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 901615E118539FE4009C0870 /* InfoPlist.strings */; };
-		901615EF1853AA69009C0870 /* XCParameterizedTestCaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 901615EE1853AA69009C0870 /* XCParameterizedTestCaseTests.m */; };
 		9016F00B1853BEF000F2B9CF /* XCParameterizedTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9016F0081853BEF000F2B9CF /* XCParameterizedTestCase.m */; };
 		9016F00C1853BEF000F2B9CF /* XCTestCaseData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9016F00A1853BEF000F2B9CF /* XCTestCaseData.m */; };
+		9016F0121853DD5D00F2B9CF /* FizzBuzz.m in Sources */ = {isa = PBXBuildFile; fileRef = 9016F0101853DD5D00F2B9CF /* FizzBuzz.m */; };
+		9054823E1854947C0074B93F /* FizzBuzzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9054823D1854947C0074B93F /* FizzBuzzTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,12 +50,14 @@
 		901615D818539FE4009C0870 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		901615E018539FE4009C0870 /* XCParameterizedTestCaseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XCParameterizedTestCaseTests-Info.plist"; sourceTree = "<group>"; };
 		901615E218539FE4009C0870 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		901615EE1853AA69009C0870 /* XCParameterizedTestCaseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCParameterizedTestCaseTests.m; sourceTree = "<group>"; };
 		9016F0071853BEF000F2B9CF /* XCParameterizedTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCParameterizedTestCase.h; sourceTree = "<group>"; };
 		9016F0081853BEF000F2B9CF /* XCParameterizedTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCParameterizedTestCase.m; sourceTree = "<group>"; };
 		9016F0091853BEF000F2B9CF /* XCTestCaseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCTestCaseData.h; sourceTree = "<group>"; };
 		9016F00A1853BEF000F2B9CF /* XCTestCaseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCTestCaseData.m; sourceTree = "<group>"; };
 		9016F00D1853D4AF00F2B9CF /* TestCaseData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCaseData.h; sourceTree = "<group>"; };
+		9016F00F1853DD5D00F2B9CF /* FizzBuzz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FizzBuzz.h; sourceTree = "<group>"; };
+		9016F0101853DD5D00F2B9CF /* FizzBuzz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizzBuzz.m; sourceTree = "<group>"; };
+		9054823D1854947C0074B93F /* FizzBuzzTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FizzBuzzTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				9016F0061853BEF000F2B9CF /* Source */,
-				901615EE1853AA69009C0870 /* XCParameterizedTestCaseTests.m */,
+				9016F00E1853DD5D00F2B9CF /* FizzBuzz */,
+				9054823D1854947C0074B93F /* FizzBuzzTests.m */,
 				901615DF18539FE4009C0870 /* Supporting Files */,
 			);
 			path = XCParameterizedTestCaseTests;
@@ -163,6 +167,15 @@
 			);
 			name = Source;
 			path = ../../Source;
+			sourceTree = "<group>";
+		};
+		9016F00E1853DD5D00F2B9CF /* FizzBuzz */ = {
+			isa = PBXGroup;
+			children = (
+				9016F00F1853DD5D00F2B9CF /* FizzBuzz.h */,
+				9016F0101853DD5D00F2B9CF /* FizzBuzz.m */,
+			);
+			path = FizzBuzz;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,9 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9054823E1854947C0074B93F /* FizzBuzzTests.m in Sources */,
 				9016F00B1853BEF000F2B9CF /* XCParameterizedTestCase.m in Sources */,
-				901615EF1853AA69009C0870 /* XCParameterizedTestCaseTests.m in Sources */,
 				9016F00C1853BEF000F2B9CF /* XCTestCaseData.m in Sources */,
+				9016F0121853DD5D00F2B9CF /* FizzBuzz.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
