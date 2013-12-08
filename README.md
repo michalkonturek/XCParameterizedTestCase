@@ -53,7 +53,7 @@ Source code of this project is available under the standard MIT license. Please 
 `XCParameterizedTestCase` is a subclass of `XCTestCase`. 
 It contains a single test method which is executed multiple times, depending on the number of test case data supplied. A test case data, represented by a class that conforms to `<TestCaseData>` protocol, holds input value and expected value.
 
-For each test case data passed `XCParameterizedTestCase` injects new `XCTestCase` with a pair of input and expected values.
+For each test case data passed, `XCParameterizedTestCase` injects new `XCTestCase` to `XCTestSuite` with a pair of input and expected values specified by a test case data.
 
 Example output of FizzBuzz parameterized test case with 5 test case data:
 
@@ -66,7 +66,7 @@ Example output of FizzBuzz parameterized test case with 5 test case data:
 
 In your `Podfile` simply add the following code:
 
-```obj-c
+```ruby
 target :YourTestTarget, :exclusive => true do
     pod 'XCParameterizedTestCase',	'>= 0.9.0'
 end
