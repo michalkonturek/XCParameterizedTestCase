@@ -44,10 +44,13 @@ you do this:
 ## Mechanics
 
 `XCParameterizedTestCase` is a subclass of `XCTestCase`. 
-It contains a single test method which is executed multiple times, depending on the number of test case data supplied. A test case data, represented by `<TestCaseData>` class, holds input value and expected value.
+It contains a single test method which is executed multiple times, depending on the number of test case data supplied. A test case data, represented by a class that conforms to `<TestCaseData>` protocol, holds input value and expected value.
 
-For each ``
+For each test case data passed `XCParameterizedTestCase` injects new `XCTestCase` with a pair of input and expected values.
 
+Example output of FizzBuzz parameterized test case with 5 test case data:
+
+![License MIT](console.png)
 
 
 ## License
