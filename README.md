@@ -3,7 +3,7 @@
 [![License MIT](https://go-shields.herokuapp.com/license-MIT-blue.png)](https://github.com/michalkonturek/XCParameterizedTestCase/blob/master/LICENSE)
 [![Build Platform](https://cocoapod-badges.herokuapp.com/p/XCParameterizedTestCase/badge.png)](https://github.com/michalkonturek/XCParameterizedTestCase)
 [![Build Version](https://cocoapod-badges.herokuapp.com/v/XCParameterizedTestCase/badge.png)](https://github.com/michalkonturek/XCParameterizedTestCase)
-[![Build Status](https://travis-ci.org/michalkonturek/XCParameterizedTestCase?branch=master)](https://travis-ci.org/michalkonturek/XCParameterizedTestCase)
+[![Build Status](https://travis-ci.org/michalkonturek/XCParameterizedTestCase.png?branch=master)](https://travis-ci.org/michalkonturek/XCParameterizedTestCase)
 
 
 Parameterized implementation of `XCTestCase`.
