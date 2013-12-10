@@ -3,10 +3,8 @@
 [![License MIT](https://go-shields.herokuapp.com/license-MIT-blue.png)](https://github.com/michalkonturek/XCParameterizedTestCase/blob/master/LICENSE)
 [![Build Platform](https://cocoapod-badges.herokuapp.com/p/XCParameterizedTestCase/badge.png)](https://github.com/michalkonturek/XCParameterizedTestCase)
 [![Build Version](https://cocoapod-badges.herokuapp.com/v/XCParameterizedTestCase/badge.png)](https://github.com/michalkonturek/XCParameterizedTestCase)
-
-<!--
 [![Build Status](https://travis-ci.org/michalkonturek/XCParameterizedTestCase?branch=master)](https://travis-ci.org/michalkonturek/XCParameterizedTestCase)
--->
+
 
 Parameterized implementation of `XCTestCase`.
 
@@ -57,7 +55,7 @@ For each test case data passed, `XCParameterizedTestCase` injects new `XCTestCas
 
 Example output of FizzBuzz parameterized test case with 5 test case data:
 
-![License MIT](console.png)
+![License MIT](console-xctool.png)
 
 
 ## Installation
@@ -102,11 +100,6 @@ end
     XCTAssertEqualObjects(self.expected, result, @"");
 }
 ```
-
-## Known Issues
-
-* `xctool` crashes when running tests with `XCParameterizedTestCase`
-* Xcode Test Navigator does not list injected test cases
 
 
 - - - 
