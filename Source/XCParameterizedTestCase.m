@@ -51,4 +51,20 @@
     return self;
 }
 
+- (NSString *)name {
+    NSInvocation *invocation = [self invocation];
+    
+    NSString *methodName = NSStringFromSelector(invocation.selector);
+    if ([methodName hasPrefix:@"test"]) {
+        return [NSString stringWithFormat:@"-[%@ %@_when_%@_returns_%@]",
+                NSStringFromClass([self class]),
+                NSStringFromSelector(invocation.selector),
+                self.input,
+                self.expected];
+    }
+    else {
+        return [super name];
+    }
+}
+
 @end
