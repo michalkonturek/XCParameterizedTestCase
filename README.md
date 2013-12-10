@@ -57,7 +57,7 @@ For each test case data passed, `XCParameterizedTestCase` injects new `XCTestCas
 
 Example output of FizzBuzz parameterized test case with 5 test case data:
 
-![License MIT](console.png)
+![License MIT](console-xctool.png)
 
 
 ## Installation
@@ -102,11 +102,6 @@ end
     XCTAssertEqualObjects(self.expected, result, @"");
 }
 ```
-
-## Known Issues
-
-* `xctool` crashes when running tests with `XCParameterizedTestCase`
-* Xcode Test Navigator does not list injected test cases
 
 
 - - - 
