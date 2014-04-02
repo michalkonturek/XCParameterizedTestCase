@@ -1,5 +1,0 @@
-[
-  "-project", "XCParameterizedTestCase.xcodeproj",
-  "-scheme", "XCParameterizedTestCase",
-  "-sdk", "iphonesimulator"
-]
