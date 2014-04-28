@@ -1,9 +1,14 @@
 # XCParameterizedTestCase
 
-[![License MIT](https://go-shields.herokuapp.com/license-MIT-blue.png)](https://github.com/michalkonturek/XCParameterizedTestCase/blob/master/LICENSE)
+[![Twitter](https://img.shields.io/badge/contact-@MichalKonturek-blue.svg?style=flat)](http://twitter.com/michalkonturek)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/michalkonturek/XCParameterizedTestCase/blob/master/LICENSE)
+[![CocoaPods](https://img.shields.io/cocoapods/v/XCParameterizedTestCase.svg?style=flat)](https://github.com/michalkonturek/XCParameterizedTestCase)
+[![Build Status](http://img.shields.io/travis/michalkonturek/XCParameterizedTestCase.svg?style=flat)](https://travis-ci.org/michalkonturek/XCParameterizedTestCase)
+
+<!--[![License MIT](https://go-shields.herokuapp.com/license-MIT-blue.png)](https://github.com/michalkonturek/XCParameterizedTestCase/blob/master/LICENSE)
 [![Build Platform](https://cocoapod-badges.herokuapp.com/p/XCParameterizedTestCase/badge.png)](https://github.com/michalkonturek/XCParameterizedTestCase)
 [![Build Version](https://cocoapod-badges.herokuapp.com/v/XCParameterizedTestCase/badge.png)](https://github.com/michalkonturek/XCParameterizedTestCase)
-[![Build Status](https://travis-ci.org/michalkonturek/XCParameterizedTestCase.png?branch=master)](https://travis-ci.org/michalkonturek/XCParameterizedTestCase)
+[![Build Status](https://travis-ci.org/michalkonturek/XCParameterizedTestCase.png?branch=master)](https://travis-ci.org/michalkonturek/XCParameterizedTestCase)-->
 
 
 Parameterized implementation of `XCTestCase`.
