@@ -7,12 +7,13 @@ Pod::Spec.new do |s|
   s.license      = 'MIT'
 
   s.author       = { 
-  "Michal Konturek" => "michal.konturek@gmail.com" 
+    "Michal Konturek" => "michal.konturek@gmail.com" 
   }
 
   s.ios.deployment_target = '7.0'
   s.ios.frameworks = 'XCTest'
 
+  s.social_media_url = 'https://twitter.com/michalkonturek'
   s.source       = { 
     :git => "https://github.com/michalkonturek/XCParameterizedTestCase.git", 
     :tag => "1.0.1" 
